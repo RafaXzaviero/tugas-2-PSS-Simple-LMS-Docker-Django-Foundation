@@ -1,0 +1,26 @@
+[
+  {
+    "model": "lms.user",
+    "pk": 1,
+    "fields": {
+      "username": "instructor1",
+      "role": "instructor",
+      "is_staff": true,
+      "password": "pbkdf2_sha256$600000$xxxx$mockpassword"
+    }
+  },
+  {
+    "model": "lms.category",
+    "pk": 1,
+    "fields": { "name": "Programming", "parent": null }
+  },
+  {
+    "model": "lms.course",
+    "pk": 1,
+    "fields": {
+      "title": "Docker for Beginners",
+      "instructor": 1,
+      "category": 1
+    }
+  }
+]
