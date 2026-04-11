@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.views.generic.base import RedirectView
+from lms.api import api # Import API yang baru kita buat
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='api/docs/')),
     path('admin/', admin.site.urls),
+    path('api/', api.urls), # Mendaftarkan semua rute API di bawah /api/
 ]

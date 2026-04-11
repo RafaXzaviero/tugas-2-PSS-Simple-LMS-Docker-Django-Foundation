@@ -28,6 +28,8 @@ simple-lms/
 3. Migrasi Database: Lakukan migrasi agar tabel PostgreSQL terbuat:
     docker compose run --rm web python manage.py migrate
 4. Akses Aplikasi: Buka browser di http://localhost:8080
+5. API Docs: Buka http://localhost:8080/api/docs
+6. Postman Collection: Impor file `postman_collection.json` untuk pengujian endpoint.
 
 ```
 ## 📸 Dokumentasi
